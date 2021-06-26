@@ -1,3 +1,5 @@
 <h1>Tweet</h1>
 <h2>User: <%= @tweet.user.username %> </h2>
 <p><%= @tweet.content %></p>
+
+<p><a href="/tweets/<%= @tweet.id %>/delete">Delete Tweet</a></p>
