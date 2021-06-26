@@ -2,10 +2,7 @@
 <h2>User: <%= @tweet.user.username %> </h2>
 <p><%= @tweet.content %></p>
 
-<form method="POST" action="/tweets/<%= @tweet.id %>">
-
-  <input id="hidden" type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete Tweet">
-</form>
+<button><a href="/tweets/<%= @tweet.id %>/edit">Edit Tweet</a></button>
+<button type="button">Delete Tweet</button>
 
 <p><a href="/tweets/<%= @tweet.id %>/delete">Delete Tweet</a></p>
